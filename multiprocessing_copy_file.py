@@ -59,6 +59,7 @@ def main():
         rate_process = len(rate_of_process) * 100 / len(file_names)
         print("\r %.1f %%" %rate_process, end="")
         time.sleep(random.uniform(0.0, 0.9))
+        # 因为目录下有三个文件夹,修改功能太麻烦
         if len(rate_of_process) >= len(file_names)-3:
             print("\r100%", end="")
             print("\r \033[0;31m复制已完成")
